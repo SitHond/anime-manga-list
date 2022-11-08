@@ -12,19 +12,11 @@ namespace animelist
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {}
-
-        private void button1_Click(object sender, EventArgs e)
         {
-            if(field_login.Text == "a" && field_pass.Text == "a")
-            {
-                Form1 f = new Form1();
-                f.Show();
-                Close();    
-            }
+            Form1 f1 = new Form1();
+            f1.Hide();
+            login f = new login();
+            f.Show(); 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {}
     }
 }
